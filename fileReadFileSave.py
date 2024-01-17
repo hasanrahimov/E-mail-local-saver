@@ -10,8 +10,8 @@ def clean(text):
 
 imap_url = 'imap.gmail.com' # Imap server url
 
-my_email = input("Enter your email login")
-password_key = input("Enter your email password")
+my_email = input("Enter your email login: ")
+password_key = input("Enter your email password: ")
 
 my_mail = imaplib.IMAP4_SSL(imap_url) # Secure IMAP connection
 my_mail.login(my_email, password_key) # Login
